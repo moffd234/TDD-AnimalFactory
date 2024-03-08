@@ -38,14 +38,13 @@ public class CatHouseTest {
 
         // Given
         Date date = new Date();
-        CatHouse catHouse = new CatHouse();
-        Cat cat = new Cat("Sage", date, 1);
-        Cat expectedOutput = CatHouse.getCatById(cat.getId());
+        Cat cat = new Cat("Sage", date, 0);
+        Cat expectedOutput = CatHouse.getCatById(0);
 
         // When
         CatHouse.add(cat);
-        CatHouse.remove(1);
-        Cat actualOutput = CatHouse.getCatById(cat.getId());
+        CatHouse.remove(0);
+        Cat actualOutput = CatHouse.getCatById(0);
 
         // Then
         Assert.assertEquals(expectedOutput, actualOutput);
@@ -75,7 +74,7 @@ public class CatHouseTest {
         // Given
         Date date = new Date();
         CatHouse catHouse = new CatHouse();
-        Cat cat = new Cat("Sage", date, 1);
+        Cat cat = new Cat("Sage", date, 0);
         Cat expectedOutput = cat;
 
         // When

@@ -14,7 +14,6 @@ import java.util.Date;
  */
 
 public class AnimalFactoryTest {
-    //TODO - Create Test for `Animal createDog(String name, Date birthDate)`
 
     @Test
     public void createDogTest(){
@@ -31,7 +30,6 @@ public class AnimalFactoryTest {
         Assert.assertEquals(expectedName, actualName);
         Assert.assertEquals(expectedBirthDate, actualDate);
     }
-    //TODO - Create Test for `Animal createCat(String name, Date birthDate)`
     @Test
     public void createCatTest(){
         // Given
